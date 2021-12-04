@@ -1,0 +1,34 @@
+Problema 09
+
+Use ciclos repetitivos
+Utilizando una estructura repetitiva diseñe un algoritmo para calcular e imprimir
+los primeros términos de la serie:
+
+S1 = 12−11+24−22+36−33+48−44
+
+------------ Miniespecificación -----------------
+
+1.Inicio
+
+2.simbolo;
+3.resta <-- "-"
+4.suma <-- "+"
+5.cadena <-- " "
+6.numeroInicial, i[0,n] <-- 12
+7.numero2,  i[0,n] <-- 11
+8.limite1, i[0,n] <-- 48
+9.limite2, i[0,n] <-- 50
+
+10.haga hasta
+
+11.SI(numeroInicial MOD 12 == 0) entonces
+12. 	simbolo = suma
+13.de lo contrario SI (numero2 == 11 || numero2 % 11 =0) entonces
+14. 	simbolo = resta
+15.Fin si
+16. cadena<-- cadena+suma+numeroInicial+resta+numero2
+17.numeroInicial <-- numeroInicial + 12
+18.numero2 <-- numero2 + 11
+19.Haga hasta(numero2 <= limite2 || numeroInicial <= limite1)
+20.Imprimir cadena
+21.FIN

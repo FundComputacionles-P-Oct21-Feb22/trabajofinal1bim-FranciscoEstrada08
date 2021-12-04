@@ -1,0 +1,33 @@
+Problema 07
+
+Elaborar un algoritmo que permita leer un número par y calcule e imprima la suma de los
+números pares del 2 hasta el número leído. Si el número leído es menor a 2 debe imprimir
+un mensaje de error.
+
+---------------------------------- Miniespecificación ----------------------------------
+1.Suma, d[0,n]
+2.impar, d[0,n]
+3.numero, in[0,n]
+4.bandera, <-- true
+5.salida, x(100)[(a-z),(A-Z),(0,n)]
+6.cadena, x(100)[(a-z),(A-Z),(0,n)]
+
+7.Mientras(bandera sea verdadera) entonces
+8.	Escribir "Ingrese un número"
+9.	Lea numero
+
+10.Si(numero MOD 2 == 0)
+11.	entonces suma<-- suma + numero
+12.FIN SI
+13.Escribir ingrese si para salir
+14.Lea salida
+
+15.SI (salida == "si") entonces
+16.	bandera= false
+17.	Y si (numero<2) entonces
+18.		Imprimir(Numero ingresado no valido)
+19.		bandera=false
+20.FIN SI
+21.FIN MIENTRAS
+22.Imprima (suma)
+23.FIN

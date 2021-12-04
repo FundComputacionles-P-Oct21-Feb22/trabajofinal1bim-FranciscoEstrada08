@@ -1,0 +1,55 @@
+Problema 08
+
+Elaborar un algoritmo que permita leer una medida (N) en número de metros y que 
+imprima una tabla de equivalencias a yardas, pulgadas y pies, desde 1 metro hasta 
+N metros de uno en uno. Equivalencias: 1 pie = 12 pulgadas, 1 yarda = 3 pies, 
+1 pulgada = 2.54 cm, 1 metro = 100 cm. Se debe imprimir la tabla siguiente:
+
+
+	Metros	  Yardas   Pulgadas   Pies
+	  1	    ?	      ?	       ?
+          2	    ?	      ?	       ?
+          3	    ?	      ?	       ?
+         ...	    ?	      ?	       ?
+          N	    ?	      ?	       ?
+
+---------------- Miniespecificación ------------
+1.Inicio
+//variables
+2.bandera<-- True
+3.cadena1, <-- " "
+4.cadenaTitulos
+5.cadenaFinal
+6.Salida
+//medidas
+7.medidaMetros, d[0,n]
+8.yardas, d[0,n]
+9.pulgadas, d[0,n]
+10. pies, d[0,n]
+
+11.mientras(bandera=true) entonces
+12.	Escribir "Ingrese la medida en metros"
+13.	Lea medidaMetros
+14.	Si(medidaMetros<0) entonces
+15.		Escribir("La medida ingresada no es válida")
+16.	Fin Si
+17.	yardas = medidaMetros / 0.9144
+18.	pulgadas = medidaMetros * 39.3701
+19.	pies = medidaMetros * 3.28084
+
+20. cadenaTitulos = ("|  METROS  |  YARDAS  |  PULGADAS  |  PIES  |")
+21. cadena1 = cadena1+ medidaMetros + yardas + pulgadas + pies
+
+22. Imprimir(cadena1)
+
+23.Escribir "Si desea seguir ingresando datos escribir "SI""
+24.Lea salida
+
+25.	SI salida = si || salida=SI entonces
+26.		bandera=false
+27.	FIN SI
+28.	cadenaFinal<-- cadenaTitulos + cadena1;
+29.	Imprimir cadenaFinal
+30.	FIN MIENTRAS
+31.FIN
+	
