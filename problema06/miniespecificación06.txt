@@ -1,0 +1,29 @@
+//Algoritmo
+1 Inicio
+2 Mientras el denominador sea menor o igual al límite 
+3 se hará una cadena con los datos empezando desde el numerador = 1 y denominador = 1
+4 Al denominador se le sumará uno sucesivamente hasta llegar al límite que es 100
+5 Se muestra en pantalla la cadena completa
+6 Fin Mientras
+7 Fin
+
+//Miniespecificación
+1 Inicio
+2 numerador,	i[0,n]<--1
+3 denominador,	i[0,n]<--1
+4 limite,	i[0,n]<--100
+5 suma,		x(5)[{+,-}]<--"+"
+6 cadena,	x(n)[{0-9}{/}]
+
+7 Mientras (denominador <= limite)
+8 cadena = String.format("%s%d/%d" + " ",
+9                 suma,
+10                numerador,
+11                denominador)
+12 denominador = denominador + 1
+13 << cadena
+14 Fin_Mientras
+
+15 Fin
+
+

@@ -1,0 +1,51 @@
+//Algoritmo
+
+1 Inicio
+
+2 Se pide que se ingresen el primer ángulo del triángulo
+3 Se pide que se ingresen el segundo ángulo del triángulo
+4 Se pide que se ingresen el tercer ángulo del triángulo
+
+5 Si uno de los ángulos ingresados es igual a 90° entonces es 
+  de tipo Rectángulo
+6 Si uno de sus ángulos ingresados es mayor que 90° pero menor que
+  180° es de tipo Obtusángulo
+7 Si sus tres ángulos ingresados son menores que 90° es de tipo
+  Acutángulo
+8 Si los datos no entran en ninguna clasificacion se muestra el 
+  mensaje de que los datos ingresados no corresponden
+9 Fin
+
+//Miniespecificación
+
+1 Inicio
+
+2 angulo1, d[0,n]
+3 angulo2, d[0,n]
+4 angulo3, d[0,n]
+
+5 << "Ingrese el primer ángulo del triángulo"
+6 >> angulo1
+
+7 << "Ingrese el segundo ángulo del triángulo"
+8 >> angulo2
+
+9 << "Ingrese el tercer ángulo del triángulo"
+10 >> angulo3
+
+11 Si angulo1==90 OR angulo2==90 OR angulo3==90 entonces
+12 << "El tipo de triángulo es Rectángulo"
+13 De lo contrario
+
+14   Si (angulo1>90 AND angulo1<180) OR (angulo2>90 AND angulo2<180)
+15      OR (angulo3>90 AND angulo3<180) entonces
+16   << "El tipo de triángulo es Obtusángulo"
+17   De lo contrario
+
+18	Si angulo1<90 AND angulo2<90 AND angulo3<90 entonces
+19	<< "El tipo de triángulo es Acutángulo"
+20	De lo contrario
+21 	<< "Los datos ingresados no corresponden a ninguno de estos
+22 	    triángulos"
+23 Fin Si
+24 Fin

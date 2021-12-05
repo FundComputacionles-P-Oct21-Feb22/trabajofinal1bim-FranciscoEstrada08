@@ -1,0 +1,68 @@
+//Algoritmo
+1 Inicio
+2 Se pide que se ingrese la cantidad de trajes a comprar
+3 Se pide que ingrese el precio unitario
+4 Se calcula el subtotal multiplicando cantidad de trajes por precio Unitario
+5 Si la cantidad de trajes es 1 entonces se aplica el descuento del 20%
+6 Si la cantidad de trajes es 2 entonces se aplica el descuento del 25%
+7 Si la cantidad de trajes es 3 entonces se aplica el descuento del 40%
+8 Si la cantidad de trajes es más de 3 entonces se aplica el descuento del 5%
+9 Se muestra en pantalla el descuento y el total a pagar
+10 Fin
+
+//Miniespecificacion
+1 Inicio
+2 porcentaje1,	d[0,n] <-- 20
+3 porcentaje2, 	d[0,n] <-- 25
+4 porcentaje3,  d[0,n] <-- 40
+5 porcentaje4,  d[0,n] <-- 50
+6 cantidadTrajes, i[0,n]
+7 precioUnitario, d[0,n]
+8 subtotal,	  d[0,n]
+9 descuento,	  d[0,n]
+10 precioFinal,	  d[0,n]
+
+11 << "Ingrese la cantidad de trajes a comprar"
+12 >> cantidadTrajes
+
+13 << "Ingrese el precio unitario"
+14 >> precioUnitario
+
+15 subtotal = cantidadTrajes * precioUnitario
+
+16 Si cantidadTrajes<=0 entonces
+17 	<< "El valor no es permitido"
+18 De lo contrario
+
+19 	Si cantidadTrajes==1 entonces
+20	descuento = (subtotal * porcentaje1)/100
+21 	precioFinal = subtotal - descuento;
+22		<< "El subotal a a pagar es: " + subtotal
+23     	 	<< "El descuento es: " + descuento
+24 		<< "El total a pagar es: " + precioFinal
+25	De lo contrario
+
+26	Si cantidadTrajes==2 entonces
+27	descuento = (subtotal * porcentaje2)/100
+28 	precioFinal = subtotal - descuento;
+29		<< "El subotal a a pagar es: " + subtotal
+30      	<< "El descuento es: " + descuento
+31 		<< "El total a pagar es: " + precioFinal
+32	De lo contrario
+
+33	Si cantidadTrajes==3 entonces
+34	descuento = (subtotal * porcentaje3)/100
+35 	precioFinal = subtotal - descuento;
+36		<< "El subotal a a pagar es: " + subtotal
+37      	<< "El descuento es: " + descuento
+38 		<< "El total a pagar es: " + precioFinal
+39	De lo contrario
+
+40	Si cantidadTrajes>3 entonces
+20	descuento = (subtotal * porcentaje4)/100
+21 	precioFinal = subtotal - descuento;
+22		<< "El subotal a a pagar es: " + subtotal
+23      	<< "El descuento es: " + descuento
+24 		<< "El total a pagar es: " + precioFinal
+25 Fin Si
+26 Fin

@@ -1,0 +1,51 @@
+//Algoritmo
+1 Inicio
+
+2 Se pide que ingrese el primer número
+3 Se pide que ingrese el segundo número
+4 Se pide que ingrese el tercer número
+
+5 Si el primer número es mayor que el segundo y el tercero
+6 entonces se muestra en pantalla que el primer número es el mayor
+7 Si el segundo número es mayor que el primero y el tercero
+8 entonces se muestra en pantalla que el segundo número es el mayor
+9 Si el tercer número es mayor que el primero y el segundo
+10 entonces se muestra en pantalla que el tercer número es el mayor
+7 Si existe repetición se mostrará el mensaje de error por números iguales ingresados
+
+8 Fin
+
+//Miniespecificación
+1 Inicio
+2 numero1,	d[0,n]
+3 numero2,	d[0,n]
+4 numero3,	d[0,n]
+
+5 << "Ingrese el primer número"
+6 >> numero1
+
+7 << "Ingrese el segundo número"
+8 >> numero2
+
+9 << "Ingrese el tercer número"
+10 >> numero3
+
+11 Si numero1 > numero2 AND numero1 > numero3 entonces
+12 << "El número mayor es: " + numero1
+13 De lo contrario 
+
+14    	Si numero2 > numero1 AND numero2 > numero3 entonces
+15 	<< "EL número mayor es: " + numero2
+16 	De lo contrario
+
+17	    Si numero3 > numero1 AND numero3 > numero2 entonces
+18	    << "El número mayor es: " + numero3
+19	    De lo contrario
+
+20  		Si numero1==numero2 OR numero1==numero3 OR numero2==numero3 entonces
+21		<< "ERROR: uno o varios de los números ingresados son iguales"
+22 Fin Si
+23 Fin
+
+
+

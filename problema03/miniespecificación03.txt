@@ -1,0 +1,56 @@
+//Miniespecificación
+1 Inicio
+2 tipoEmpleado,	d[0,n]
+3 hotasTrabajadas, d[0,n]
+4 cuotaHora,	d[0,n]
+5 subtotal,	d[0,n]
+6 horasExtra,	d[0,n]
+7 valorHorasExtra, d[0,n]
+8 totalPagar,	d[0,n]
+9 cuota1,	d[0,n]<--1.5
+10 cuota2,	d[0,n]<--2
+11 cuota3,	d[0,n]<--2.5
+12 cuota4,	d[0,n]<--3
+13 nombre,	x(1000)[{a-z}{A-z}{BS}]
+
+14 << "Ingrese su nombre"
+15 >> nombre
+
+16 << "Ingrese el tipo de empleado que corresponde"
+17 >> tipoEmpleado
+
+18 << "Ingrese la cantidad de horas trabajadas"
+19 >> horasTrabajadas
+
+20 << "Ingrese la cuota que se le paga por hora"
+21 >> cuotaHora
+
+22 Si (tipoEmpleado <= 0 OR tipoEmpleado > 4 OR horasTrabajadas <= 0) entonces
+23 << "Por favor ingrese datos válidos"
+24 De lo contrario
+
+ Si horasTrabajadas <= 40
+ subtotal = horasTrabajadas * cuotaHora
+ << "Nombre de empleado: " + nombre
+ << "Tipo de empleado: " + tipoEmpleado
+ << ""Número de horas trabajadas: " + horasTrabajadas
+ << "Cuota que se le paga por hora: " + cuotaHora
+ << "Sueldo por pagar: " + subtotal
+ De lo contrario
+
+ Si ((tipoEmpleado == 1 OR tipoEmpleado == 2 OR tipoEmpleado == 3 OR tipoEmpleado == 4)
+    AND horasTrabajadas < 40) entonces
+ subtotal = horasTrabajadas * cuota1;
+ << "Nombre de empleado: " + nombre
+ << "Tipo de empleado: " + tipoEmpleado
+ << ""Número de horas trabajadas: " + horasTrabajadas
+ << "Cuota que se le paga por hora: " + cuotaHora
+ << "Sueldo por pagar: " + subtotal
+ De lo contrario
+
+	Si tipoEmpleado == 1 AND horasTrabajadas > 40 entonces
+	  subtotal = 40*cuotaHora
+	  horasExtra = horasTrabajadas - 40
+	De lo contrario
+
+ 	  

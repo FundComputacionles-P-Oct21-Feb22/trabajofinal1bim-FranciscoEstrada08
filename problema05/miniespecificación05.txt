@@ -1,0 +1,52 @@
+//Algoritmos
+1 Inicio
+
+2 Se pide que ingrese la coordenada X
+3 Se pide que ingrese la coordenada Y
+
+4 Si la coordenada X es igual a 0 y la coordenada Y es igual a 0 entonces se 
+5 muestra el mensaje de que la coordenada esta en el centro del plano
+
+6 Si la coordenada X es mayor a 0 y la coordenada Y es mayor a 0 entonces se
+7 muestra el mensaje de que la coordenada esta en el primer cuadrante del plano
+
+8 Si la coordenada X es menor a 0 y la coordenada Y es mayor a 0 entonces se
+9 muestra el mensaje de que la coordenada esta en el segundo cuadrante del plano
+
+10 Si la coordenada X es menor a 0 y la coordenada Y es menor a 0 entonces se
+11 muestra el mensaje de que la coordenada esta en el tercer cuadrante del plano
+
+12 Si la coordenada X es mayor a 0 y la coordenada Y es menor a 0 entonces se
+13 muestra el mensaje de que la coordenada esta en el cuarto cuadrante del plano
+
+14 Fin
+
+//Miniespecificación
+
+1 Inicio
+
+2 corY,	d[0,n]
+3 corX, d[0,n]
+
+4 << "Ingrese la coordenada X"
+5 >> corX
+
+6 << "Ingrese la coordenada Y"
+7 >> corY
+
+8 Si corX==0 AND corY==0 entonces
+9 << "La coordenada esta en el centro del plano"
+10 De lo contrario
+11	Si corX > 0 AND corY > 0 entonces
+12	<< "La coordenada se encuentra en el Primer cuadrante 1: Región superior derecha"
+13	De lo contrario
+14		Si corX < 0 AND corY > 0 entonces
+15		<< "La coordenada se encuentra en el Segundo cuadrante 2: Región superior izquierda"
+16		De lo contrario
+17			Si corX < 0 AND corY < 0 entonces
+18			<< "La coordenada se encuentra en el Tercer cuadrante 3: Región inferior izquierda"
+19			De lo contrario
+20				Si corX > 0 AND corY < 0 entonces
+21				<< "La coordenada se encuentra en el Cuarto cuadrante 4: Región inferior derecha"
+22 Fin si
+23 Fin
